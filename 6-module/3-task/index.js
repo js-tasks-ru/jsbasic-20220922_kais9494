@@ -83,10 +83,10 @@ export default class Carousel {
   }
 
   slideTo(index) {
-
     if (index > 0 && index <= this.slidesQty && index != this.activeSlide) {
 
       let slideWidth = this.elem.offsetWidth;
+
       let slideDifference = this.activeSlide - index;
       let translateValue = this.offsetDist + slideWidth * slideDifference;
       this.sliderInner.style.transform = `translateX(${translateValue}px)`
@@ -97,3 +97,6 @@ export default class Carousel {
     }
   }
 }
+
+
+
