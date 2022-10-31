@@ -49,7 +49,6 @@ export default class Modal {
   }
 
   onEsc(e) {
-    console.log('123')
     if (e.code === 'Escape') {
       this.close()
     }
